@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  Bootstrap css  -->
+    <link rel="stylesheet" href="./css/bootstrap.rtl.min.css">
+    <!--  my custom CSS  -->
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <title>Ali-Gh-Dev || Admin Pannel 2</title>
+</head>
+
+
+<body>
+
+
+
+
+
+
+<!--  bootstrap js  -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous">
+</script>
+
+<!-- jQuery -->
+<script
+        src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+        crossorigin="anonymous">
+</script>
+
+<!--  my custom js  -->
+<script src="./js/script.js"></script>
+
+<!--fontawesome icons-->
+<script src="https://kit.fontawesome.com/e98763869b.js" crossorigin="anonymous"></script>
+
+<!--  chart.js  -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script>
+    const ctx = document.getElementById('myChart');
+
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19, 3, 5, 2, 3],
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>
