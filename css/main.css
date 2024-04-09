@@ -9,10 +9,36 @@
     /* Safari, Android, iOS */
 }
 
+:root {
+    --clr: #09e4b5;
+    --clr-light: #c1e4df;
+}
+
 
 /*  ====================== css styles ======================  */
 
 body {
     font-family: "Vazir" !important;
+    /*background-color: #F7F0F5 !important;*/
+    background-color: var(--clr-light) !important;
 }
 
+#sidebarCollapse a,
+#offcanvasRight a {
+    transition: all linear 0.3s;
+}
+
+
+#sidebarCollapse a:hover,
+#offcanvasRight a:hover {
+    padding-right: 0.75rem;
+    background-color: var(--clr);
+    border-radius: 0.5rem;
+}
+
+#sidebarCollapse .collapse,
+#offcanvasRight .collapse {
+    background-color: var(--clr-light);
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
