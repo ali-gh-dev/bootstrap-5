@@ -27,8 +27,8 @@
             <!--  sidebar for width >  992px  -->
             <div class="col-auto">
 
-                <div class="collapse collapse-horizontal" id="sidebarCollapse" >
-                    <div class="card card-body overflow-y-auto" style="width: 25vw;height: 100vh">
+                <div class="collapse collapse-horizontal" id="sidebarCollapse">
+                    <div class="card card-body overflow-y-auto" style="width: 22vw;height: 100vh">
 
                         <h4 class="text-center">Ali-Gh-Dev</h4>
                         <hr>
@@ -171,7 +171,9 @@
                 <div class="row g-0">
 
                     <div class="col-9">
-                        <div class="row mt-2 ms-2 g-2 row-cols-2 row-cols-md-3 row-cols-xl-4">
+
+                        <!--  cards  -->
+                        <div class="row mt-2 ms-3 g-2 row-cols-2 row-cols-md-3 row-cols-xl-4" id="cards">
                             <div class="col">
                                 <div class="card rounded-4">
                                     <div class="card-body">
@@ -181,7 +183,7 @@
                                             </div>
                                             <div class="col col-md-8 text-center">
                                                 <p class="text-black-50">نمایش پروفایل</p>
-                                                <p class="fw-bold fs-6 mb-0">23000</p>
+                                                <p class="fw-bold fs-5 mb-0 count">23000</p>
                                             </div>
                                         </div>
                                     </div>
@@ -195,8 +197,8 @@
                                                 <i class="bi bi-person-fill fs-3 text-white bg-primary p-2 rounded-2"></i>
                                             </div>
                                             <div class="col col-md-8 text-center">
-                                                <p class="text-black-50">نمایش پروفایل</p>
-                                                <p class="fw-bold fs-6 mb-0">23000</p>
+                                                <p class="text-black-50">کاربران</p>
+                                                <p class="fw-bold fs-5 mb-0 count">798</p>
                                             </div>
                                         </div>
                                     </div>
@@ -210,8 +212,8 @@
                                                 <i class="bi bi-person-check-fill fs-3 text-white bg-success p-2 rounded-2"></i>
                                             </div>
                                             <div class="col col-md-8 text-center">
-                                                <p class="text-black-50">نمایش پروفایل</p>
-                                                <p class="fw-bold fs-6 mb-0">23000</p>
+                                                <p class="text-black-50">پست ها</p>
+                                                <p class="fw-bold fs-5 mb-0 count">450</p>
                                             </div>
                                         </div>
                                     </div>
@@ -226,13 +228,30 @@
                                             </div>
                                             <div class="col col-md-8 text-center">
                                                 <p class="text-black-50">نمایش پروفایل</p>
-                                                <p class="fw-bold fs-6 mb-0">23000</p>
+                                                <p class="fw-bold fs-5 mb-0 count">15000</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!--  chart  -->
+                        <div class="row mt-2 ms-3" id="chart">
+                            <div class="col ps-0">
+                                <div class="card rounded-4">
+                                    <div class="card-header fw-bold">
+                                        <h5 class="mb-0 py-2">آمار بازدید و فروش</h5>
+                                    </div>
+
+                                    <div class="p-3">
+                                        <canvas id="myChart" style="width:100%;"></canvas>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
 
                     </div>
 
@@ -368,11 +387,27 @@
     new Chart(ctx, {
         type: 'bar',
         data: {
-            labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+            labels: ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Purple'],
             datasets: [{
                 label: '# of Votes',
-                data: [12, 19, 3, 5, 2, 3],
-                borderWidth: 1
+                data: [12, 19, 3, 5, 16, 3],
+                backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(255, 159, 64, 0.2)',
+                    'rgba(255, 205, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(153, 102, 255, 0.2)'
+                ],
+                borderColor: [
+                    'rgb(255, 99, 132)',
+                    'rgb(255, 159, 64)',
+                    'rgb(255, 205, 86)',
+                    'rgb(75, 192, 192)',
+                    'rgb(54, 162, 235)',
+                    'rgb(153, 102, 255)'
+                ],
+                borderWidth: 3
             }]
         },
         options: {
