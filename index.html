@@ -19,15 +19,16 @@
 
 <body>
 
-<!--  navbar & sidebar  -->
+
 <section>
     <div class="container-fluid p-0">
         <div class="row g-0">
 
-            <div class="col-auto d-none d-lg-block">
+            <!--  sidebar for width >  992px  -->
+            <div class="col-auto">
 
-                <div class="collapse collapse-horizontal" id="sidebarCollapse">
-                    <div class="card card-body overflow-y-auto" style="width: 25vw;height: 100vh;">
+                <div class="collapse collapse-horizontal" id="sidebarCollapse" >
+                    <div class="card card-body overflow-y-auto" style="width: 25vw;height: 100vh">
 
                         <h4 class="text-center">Ali-Gh-Dev</h4>
                         <hr>
@@ -121,7 +122,8 @@
 
             </div>
 
-            <div class="col-auto flex-fill">
+            <!--  content  -->
+            <div class="col">
 
                 <nav class="navbar navbar-light bg-light  py-0" id="main-nav">
                     <div class="container justify-content-between">
@@ -166,13 +168,87 @@
                     </div>
                 </nav>
 
+                <div class="row g-0">
+
+                    <div class="col-9">
+                        <div class="row mt-2 ms-2 g-2 row-cols-2 row-cols-md-3 row-cols-xl-4">
+                            <div class="col">
+                                <div class="card rounded-4">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col col-md-4 mb-3 mb-md-0">
+                                                <i class="bi bi-eye-fill fs-3 text-white bg-info p-2 rounded-2"></i>
+                                            </div>
+                                            <div class="col col-md-8 text-center">
+                                                <p class="text-black-50">نمایش پروفایل</p>
+                                                <p class="fw-bold fs-6 mb-0">23000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-4">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col col-md-4 mb-3 mb-md-0">
+                                                <i class="bi bi-person-fill fs-3 text-white bg-primary p-2 rounded-2"></i>
+                                            </div>
+                                            <div class="col col-md-8 text-center">
+                                                <p class="text-black-50">نمایش پروفایل</p>
+                                                <p class="fw-bold fs-6 mb-0">23000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-4">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col col-md-4 mb-3 mb-md-0">
+                                                <i class="bi bi-person-check-fill fs-3 text-white bg-success p-2 rounded-2"></i>
+                                            </div>
+                                            <div class="col col-md-8 text-center">
+                                                <p class="text-black-50">نمایش پروفایل</p>
+                                                <p class="fw-bold fs-6 mb-0">23000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card rounded-4">
+                                    <div class="card-body">
+                                        <div class="row align-items-center">
+                                            <div class="col col-md-4 mb-3 mb-md-0">
+                                                <i class="bi bi-person-x-fill fs-3 text-white bg-warning p-2 rounded-2"></i>
+                                            </div>
+                                            <div class="col col-md-8 text-center">
+                                                <p class="text-black-50">نمایش پروفایل</p>
+                                                <p class="fw-bold fs-6 mb-0">23000</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-3">
+
+                    </div>
+
+                </div>
+
             </div>
 
         </div>
     </div>
 </section>
 
-<!--  navbar offcanvas  -->
+<!--  navbar offcanvas (sidebar for width <  992px)  -->
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
     <div class="offcanvas-header pb-0">
         <h4 class="offcanvas-title" id="offcanvasRightLabel">Ali-Gh-Dev</h4>
