@@ -49,3 +49,22 @@ body {
     height: 7rem;
 }
 
+img.user-profile {
+    object-fit: cover;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+}
+
+.users-btn {
+    background-color: transparent;
+    color: var(--clr);
+    border: 3px solid var(--clr);
+    font-weight: bold;
+}
+
+.users-btn:hover {
+    background-color: var(--clr);
+    color: white;
+    border: 3px solid var(--clr);
+}
