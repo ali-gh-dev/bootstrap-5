@@ -25,6 +25,11 @@ body {
     background-color: var(--clr-light) !important;
 }
 
+#main-nav {
+    margin-right: -12px ;
+    margin-left: -12px !important;
+}
+
 #sidebarCollapse a,
 #offcanvasRight a {
     transition: all linear 0.3s;
