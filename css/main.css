@@ -26,7 +26,7 @@ body {
 }
 
 #main-nav {
-    margin-right: -12px ;
+    margin-right: -12px;
     margin-left: -12px !important;
 }
 
@@ -72,4 +72,26 @@ img.user-profile {
     background-color: var(--clr);
     color: white;
     border: 3px solid var(--clr);
+}
+
+.progress {
+    border: 2px solid black;
+    height: 1.6rem;
+}
+
+.progress .progress-bar {
+    color: black;
+    font-size: 1.1rem;
+}
+
+.prog-1 {
+    background-color: var(--clr);
+}
+
+.prog-2 {
+    background-color: #f24646;
+}
+
+.prog-3 {
+    background-color: #ee24ee;
 }
